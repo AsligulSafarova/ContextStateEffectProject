@@ -11,7 +11,7 @@ export default function BasketItems({ id, title, price, description, discountPer
             <div>
                 <h1>{title} </h1>
                 <h2>{description}</h2>
-                <p className={s.price}>{price}$</p>
+                <p className={s.price}>{price * count}$</p>
                 <p className={s.discount}>{discountPercentage}%</p>
                 <img src={images[0]} alt="" />
             </div>
